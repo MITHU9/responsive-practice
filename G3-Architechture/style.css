@@ -322,13 +322,17 @@ p {
   .love-feature {
     flex-direction: column;
     padding: 0 1rem;
-    width: 90vw;
+    width: 100%;
   }
   .love-feature-img {
-    width: 100%;
-    height: 100%;
+    width: 70%;
     padding: 0;
   }
+  .year {
+    width: 30%;
+    height: 25%;
+  }
+
   .details-text {
     width: 90vw;
     padding: 2rem 0 2rem 0;
@@ -338,7 +342,7 @@ p {
     row-gap: 10px;
   }
   .facts-card .facts {
-    height: 25vh;
+    height: auto;
     width: 40%;
   }
   .sponsors {
@@ -354,7 +358,7 @@ p {
     padding: 20px;
   }
 }
-@media screen and (min-width: 992.5px) and (max-width: 1280px) {
+@media screen and (min-width: 992.5px) and (max-width: 1370px) {
   main {
     width: 100%;
   }
@@ -369,7 +373,7 @@ p {
     padding: 0 5px;
   }
   .hero-text {
-    width: 100%;
+    width: 80%;
     text-align: center;
   }
   .first {
@@ -381,8 +385,11 @@ p {
     width: 90vw;
   }
   .love-feature-img {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+  }
+  .year {
+    width: 30%;
+    height: 25%;
   }
   .details-text {
     width: 90vw;

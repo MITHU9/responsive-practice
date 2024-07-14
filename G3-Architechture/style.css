@@ -229,6 +229,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  filter: grayscale(100%);
 }
 .company-img a {
   text-decoration: none;

@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --color-primary: #ff5400;
+  --color-secondary: #515153;
+  --color-tertiary: #7c7c80;
+  --color-fourth: #f4f4f4;
+  --bg-color: #fff4e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+header {
+  padding: 2rem 4rem;
+}
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.nav-section .nav-items {
+  display: flex;
+  align-items: center;
+}
+#hide {
+  display: none;
+}
+span {
+  color: var(--color-primary);
+}
+.nav-items ul {
+  display: flex;
+  gap: 10px;
+}
+.nav-items ul li {
+  list-style-type: none;
+  margin-right: 1rem;
+}
+.nav-items ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+section {
+  padding: 5rem 0;
+}
+.hero-section {
+  max-width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      180deg,
+      #3d3d3f 0%,
+      rgba(71, 70, 69, 0.185) 30%
+    ),
+    url("./Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  max-width: 76%;
+  max-height: 300px;
+  color: #fff;
+}
+.hero-text {
+  max-width: 90%;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+.hero-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(255, 255, 255, 0.3);
+  padding: 1.5rem;
+  gap: 1.5rem;
+  border-radius: 10px;
+}
+.hero-nav input,
+select {
+  width: 190px;
+  padding: 20px 15px;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #7c7c80;
+}
+.btn {
+  width: 190px;
+  padding: 15px 10px;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-primary);
+  color: #fff;
+  cursor: pointer;
+}
+.Container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.popular-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.8rem;
+}
+.popular h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+.popular p,
+.destination-text p {
+  font-size: 1rem;
+  color: var(--color-secondary);
+  padding: 2rem 0;
+}
+.popular ul {
+  padding: 0 2rem;
+}
+.popular ul li {
+  padding: 1rem 0;
+}
+.popular-img img {
+  width: 100%;
+}
+.destination {
+  width: 100%;
+}
+.destination-text {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+.destination-text h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.destination-img {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: #fff;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+.center {
+  font-size: 1.3rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-1 {
+  width: 580px;
+  height: 300px;
+  background-image: url("./Images/maldives.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column: 1/7;
+}
+.grid-2 {
+  width: 580px;
+  height: 300px;
+  background-image: url("./Images/indonesia.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column: 7/13;
+}
+.grid-3 {
+  width: 380px;
+  height: 300px;
+  background-image: url("./Images/srilanka.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column: 1/5;
+}
+.grid-4 {
+  width: 480px;
+  height: 300px;
+  background-image: url("./Images/america.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column: 5/10;
+}
+.grid-5 {
+  width: 280px;
+  height: 300px;
+  background-image: url("./Images/kashmir.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column: 10/13;
+}
+.grid-6 {
+  width: 480px;
+  height: 300px;
+  background-image: url("./Images/bd.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column: 1/6;
+}
+.grid-7 {
+  width: 680px;
+  height: 300px;
+  background-image: url("./Images/bandarban.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  grid-column: 6/13;
+}
+
+/* For Small Device*/
+@media screen and (max-width: 640px) {
+  header {
+    padding: 1rem;
+  }
+  .nav-items ul {
+    display: none;
+  }
+  #hide {
+    display: block;
+  }
+  .hero-section {
+    width: 340px;
+    height: 500px;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+  }
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-text p {
+    font-size: 1rem;
+    color: #ffffff;
+    padding-bottom: 0.3rem;
+  }
+  .hero-nav {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+  .popular-section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .popular h2,
+  .destination-text h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+  }
+  .popular p,
+  .destination-text p {
+    padding: 0.8rem;
+  }
+  .destination-text {
+    width: 310px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .destination-img {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 0.5rem;
+  }
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5,
+  .grid-6,
+  .grid-7 {
+    width: 340px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    grid-column: 1;
+  }
+  .center {
+    font-size: 0.8rem;
+  }
+}
+/* For Medium Device*/
+@media screen and (min-width: 640.5px) and (max-width: 1024px) {
+  header {
+    padding: 1rem;
+  }
+  .nav-items ul {
+    gap: 0.5rem;
+  }
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+  .hero-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    justify-items: center;
+  }
+  .hero-section {
+    width: 95vw;
+    align-items: flex-start;
+  }
+  .popular-section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .destination-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .grid-1 {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    grid-column: 1/2;
+  }
+  .grid-2 {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    grid-column: 2/3;
+  }
+  .grid-3 {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    grid-column: 1/2;
+  }
+  .grid-4 {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    grid-column: 2/3;
+  }
+  .grid-5 {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    grid-column: 1/2;
+  }
+  .grid-6 {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    grid-column: 2/3;
+  }
+  .grid-7 {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 10px;
+    grid-column: 1/3;
+  }
+}
